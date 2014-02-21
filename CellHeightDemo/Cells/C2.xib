@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="C2" rowHeight="135" id="450-bq-ZZv" customClass="C2">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="450-bq-ZZv" id="SgN-L8-0Xy">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="134"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pr6-Nn-mea">
+                        <rect key="frame" x="87" y="11" width="220" height="115"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img.png" translatesAutoresizingMaskIntoConstraints="NO" id="f6F-ef-h8X">
+                        <rect key="frame" x="7" y="11" width="72" height="67"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="67" id="Ddb-9w-AIZ"/>
+                            <constraint firstAttribute="width" constant="72" id="Tcy-nt-H3T"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pr6-Nn-mea" firstAttribute="leading" secondItem="SgN-L8-0Xy" secondAttribute="leading" constant="87" id="Cht-6Q-i8f"/>
+                    <constraint firstItem="f6F-ef-h8X" firstAttribute="leading" secondItem="SgN-L8-0Xy" secondAttribute="leading" constant="7" id="EUv-BJ-Ujv"/>
+                    <constraint firstAttribute="bottom" secondItem="pr6-Nn-mea" secondAttribute="bottom" constant="8" id="IIl-FA-VB4"/>
+                    <constraint firstAttribute="trailing" secondItem="pr6-Nn-mea" secondAttribute="trailing" constant="13" id="VPu-gP-cvL"/>
+                    <constraint firstItem="f6F-ef-h8X" firstAttribute="top" secondItem="SgN-L8-0Xy" secondAttribute="top" constant="11" id="j1D-cO-OdQ"/>
+                    <constraint firstItem="pr6-Nn-mea" firstAttribute="top" secondItem="SgN-L8-0Xy" secondAttribute="top" constant="11" id="wDO-NZ-55k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="t" destination="pr6-Nn-mea" id="2L2-et-Ypy"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img.png" width="94" height="94"/>
+    </resources>
+</document>

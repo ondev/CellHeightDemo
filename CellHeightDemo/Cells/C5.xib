@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="C5" rowHeight="69" id="bef-xh-a4x" customClass="C5">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bef-xh-a4x" id="NFV-hV-6hH">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xY7-Az-hnt">
+                        <rect key="frame" x="9" y="11" width="44" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="3Ar-31-VdH"/>
+                            <constraint firstAttribute="height" constant="21" id="Nrr-FS-Q2d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Input" translatesAutoresizingMaskIntoConstraints="NO" id="wnx-eF-q3b">
+                        <rect key="frame" x="61" y="10" width="239" height="49"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wnx-eF-q3b" firstAttribute="top" secondItem="NFV-hV-6hH" secondAttribute="top" constant="10" id="54b-oJ-C6r"/>
+                    <constraint firstItem="wnx-eF-q3b" firstAttribute="leading" secondItem="xY7-Az-hnt" secondAttribute="trailing" constant="8" id="HKW-VR-SAZ"/>
+                    <constraint firstAttribute="bottom" secondItem="wnx-eF-q3b" secondAttribute="bottom" constant="9" id="L1d-F2-a4r"/>
+                    <constraint firstItem="xY7-Az-hnt" firstAttribute="leading" secondItem="NFV-hV-6hH" secondAttribute="leading" constant="9" id="PqJ-cc-lWT"/>
+                    <constraint firstAttribute="trailing" secondItem="wnx-eF-q3b" secondAttribute="trailing" constant="20" id="ns4-zv-DT1"/>
+                    <constraint firstItem="xY7-Az-hnt" firstAttribute="top" secondItem="NFV-hV-6hH" secondAttribute="top" constant="11" id="vlz-4L-ZpD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="t" destination="wnx-eF-q3b" id="UcC-lc-hys"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
